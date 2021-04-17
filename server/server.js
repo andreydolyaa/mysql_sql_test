@@ -4,7 +4,7 @@ const port = process.env.PORT || 3001;
 const app = express();
 
 const corsOptions = {
-    origin: ['http://localhost:3000', 'http://localhost:3001'],
+    origin: ['http://localhost:3000', 'http://localhost:3001','http://127.0.0.1:5500'],
     credentials: true
 };
 

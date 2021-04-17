@@ -1,11 +1,36 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/client/src/main.css">
+    <title>User Manager</title>
 </head>
+
 <body>
-    
+    <div class="main-container">
+        
+        <table>
+            <thead>
+                <tr>
+                    <th >ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Age</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                </tr>
+            </thead>
+            <tbody class="users-container">
+
+            </tbody>
+        </table>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/client/src/main.js" type="module"></script>
+    <script src="/client/src/user_service.js" type="module"></script>
+    <script src="/client//src/user_controller.js" type="module"></script>
 </body>
+
 </html>
