@@ -8,6 +8,14 @@ async function loadUsers() {
     return users.data;
 }
 
+async function addUser(user) {
+    const newUser = await axios.post(BASE_URL, user);
+    return newUser.data;
+}
 
 
-export { loadUsers };
+
+export {
+    loadUsers,
+    addUser
+};

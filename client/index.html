@@ -10,6 +10,16 @@
 
 <body>
     <div class="main-container">
+
+
+        <form class="add-user-form">
+            <label>First Name: <input type="text" required id="first-name"></label>
+            <label>Last Name: <input type="text" required id="last-name"></label>
+            <label>Age: <input type="text" required id="age"></label>
+            <label>Email: <input type="text" required id="email"></label>
+            <label>Address: <input type="text" required id="address"></label>
+            <button onclick="onAddUser(event)">Add</button>
+        </form>
         
         <table>
             <thead>
@@ -26,6 +36,7 @@
 
             </tbody>
         </table>
+
     </div>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="/client/src/main.js" type="module"></script>
